@@ -50,17 +50,18 @@
   "dependencies": {
     "@types/react": "^16.14.5",
     "@types/react-dom": "^16.9.12",
+    "nedb": "^1.8.0",
     "prop-types": "^15.5.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-sortable-hoc": "^2.0.0"
   },
   "devDependencies": {
+    "@types/nedb": "^1.8.13",
     "@types/node": "^20.3.3",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
-    "@types/nedb": "^1.8.13",
     "copyfiles": "^2.4.1",
     "esbuild": "^0.18.11",
     "esbuild-runner": "^2.2.2",

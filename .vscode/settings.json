@@ -3,7 +3,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "vscode.typescript-language-features",
     "eslint.validate": [
