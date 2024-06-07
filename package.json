@@ -1,30 +1,32 @@
 {
-  "name": "insomnia-plugin-request-navigator",
-  "version": "0.3.0",
-  "private": true,
+  "name": "insomnia-plugin-request-navigator-forked",
+  "version": "0.3.2",
   "insomnia": {
-    "name": "request-navigator",
-    "displayName": "Tabs: Requests Navigator",
+    "name": "request-navigator-fork",
+    "displayName": "Tabs: Requests Navigator (Fork)",
     "description": "Lost in Requests? Let's Navigate!",
     "unlisted": false,
     "images": {
       "icon": "request-navigator-icon-sm.png"
     },
     "publisher": {
-      "name": "Nick Rimmer",
-      "icon": "https://www.gravatar.com/avatar/53a530a44db8d365a66bcdef9d49e23c"
+      "name": "Franklin Castellanos",
+      "icon": "https://avatars.githubusercontent.com/u/84517879?v=4"
     }
   },
   "main": "dist/index.js",
   "author": "Nick Rimmer <NickRimmer@debugging.ninja>",
+  "contributors": [
+    "Franklin Castellanos <castelldev@gmail.com>"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NickRimmer/insomnia-plugin-request-navigator.git",
+    "url": "git+https://github.com/castelldev/insomnia-tabs-plugin.git",
     "directory": ""
   },
   "bugs": {
-    "url": "https://github.com/NickRimmer/insomnia-plugin-request-navigator/issues"
+    "url": "https://github.com/castelldev/insomnia-tabs-plugin/issues"
   },
   "scripts": {
     "build-npm": "node npm/generate-package.js && copyfiles -u 2 ./npm/content/* ./dist/",
@@ -34,8 +36,8 @@
     "clean": "rimraf dist",
     "publish": "npm run build && cd dist && npm publish",
     "publish-dry": "npm run build && cd dist && npm publish --dry-run",
-    "install": "copyfiles -u 1 ./dist/* %appdata%/insomnia/plugins/insomnia-plugin-request-navigator",
-    "install-dev": "copyfiles -u 1 ./dist/* %appdata%/insomnia-app/plugins/insomnia-plugin-request-navigator",
+    "install": "copyfiles -u 1 ./dist/* %appdata%/insomnia/plugins/plugin-request-navigator-fork",
+    "install-dev": "copyfiles -u 1 ./dist/* %appdata%/insomnia-app/plugins/insomnia-plugin-request-navigator-fork",
     "lint": "eslint --ext .ts,.tsx .",
     "lint-fix": "eslint --ext .ts,.tsx --fix ."
   },
